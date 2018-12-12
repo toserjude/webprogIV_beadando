@@ -28,8 +28,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="/public/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="/webprogIV_beadando/public/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
