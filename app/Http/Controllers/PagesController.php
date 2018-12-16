@@ -24,7 +24,11 @@ class PagesController extends Controller
             'services' => [
                 'WebDesign',
                 'Programming',
-                'SEO'
+                'SEO',
+                'Something',
+                'Something else',
+                'More something else',
+                'I have no idea'
             ]
         );
         return view('pages.services')->with($data);
