@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a href="/webprogIV_beadando/public/post/create">Create post</a>
+                    <a href="/post/create">Create post</a>
                     <h3>Your blog posts</h3>
                     @if (count($posts)>0)
                         <table class="table table-striped">
@@ -25,7 +25,7 @@
                             @foreach ($posts as $post)
                                 <tr>
                                     <th>{{$post->title}}</th>
-                                    <th><a href="/webprogIV_beadando/public/post/{{$post->id}}/edit" class="btn btn-light">Edit</a></th>
+                                    <th><a href="/post/{{$post->id}}/edit" class="btn btn-light">Edit</a></th>
                                     <th>{!!Form::open(['action' => ['PostController@destroy', $post->id], 'method' => 'POST'])!!}
                                             {{Form::hidden('_method', 'DELETE')}}
                                             {{Form::submit('Delete', ['class' => 'btn btn-light'])}}
