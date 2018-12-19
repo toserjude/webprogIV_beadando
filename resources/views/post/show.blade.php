@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <a href="/webprogIV_beadando/public/post/" class="btn btn-light">Go Back</a>
+    <a href="{{route('post.index')}}" class="btn btn-light">Go Back</a>
     <h1>{{$post->title}}</h1>
     <hr>
     <div> 

@@ -8,7 +8,7 @@
             <div class="well">
 
                     <div>
-                        <h3><a href="/webprogIV_beadando/public/post/{{$post->id}}">{{$post->title}}</a></h3>
+                        <h3><a href="{{route('post.show', $post->id)}}">{{$post->title}}</a></h3>
                         <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>  
                     </div>
             </div>
