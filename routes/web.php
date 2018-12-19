@@ -18,4 +18,4 @@ Route::resource('post', 'PostController');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-
+Route::get('/vendor')->name('vendor');
